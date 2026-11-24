@@ -11,10 +11,20 @@ theme = "tabi"
 
 title = "Hicklin"
 
-[markdown]
+generate_feeds = false
 
+[markdown]
 [markdown.highlighting]
 theme = "catppuccin-mocha"
 
 [extra]
-# Put all your custom variables here
+show_date = false
+show_reading_time = false
+show_remote_changes = false
+show_remote_source = false
+
+menu = [
+    { name = "Work", url = "/work" },
+    { name = "Testimonials", url = "/testimonials" },
+    { name = "About", url = "/about" },
+]
