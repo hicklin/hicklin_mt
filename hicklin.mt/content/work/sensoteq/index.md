@@ -1,10 +1,10 @@
 +++
 title = "Ultrasonic data-logger"
 description = "Greenfield design and development of an ultrasonic data-logger, and the communication specification and protocol architecture for the system around it."
-weight = 1
+weight = 10
 
 [extra]
-local_image = "work/sensoteq/measurement_timing.svg"
+# local_image = "work/sensoteq/measurement_timing.svg"
 +++
 
 A nine-month fixed-term contract with Sensoteq, designing and building a greenfield
