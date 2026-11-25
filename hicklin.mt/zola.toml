@@ -12,6 +12,7 @@ theme = "tabi"
 title = "Hicklin"
 
 generate_feeds = false
+taxonomies = [{ name = "tags" }]
 
 [markdown]
 [markdown.highlighting]
@@ -24,7 +25,7 @@ show_remote_changes = false
 show_remote_source = false
 
 menu = [
-    { name = "Work", url = "/work" },
+    { name = "Work", url = "/projects" },
     { name = "Testimonials", url = "/testimonials" },
     { name = "About", url = "/about" },
 ]
