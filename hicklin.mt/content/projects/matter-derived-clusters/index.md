@@ -7,13 +7,13 @@ weight = 20
 tags = ["C++", "Standards", "API design", "Technical leadership", "OSS"]
 
 [extra]
-# Add the photo of the members meeting talk here, then uncomment:
+# Add the photo of the Boston talk (June 2023) here, then uncomment:
 # local_image = "projects/matter-derived-clusters/derived-cluster-pattern-talk.jpg"
 +++
 
 - **Role** — Senior Embedded Software Engineer at Dyson, contributing to the Matter SDK on behalf of a member company
 - **Period** — May to October 2023
-- **Outcome** — Mode Base shipped on the pattern; presented to the membership at a Matter members meeting
+- **Outcome** — Mode Base shipped on the pattern; presented to the membership at the Matter members meeting in Boston, June 2023
 
 Matter is the smart-home interoperability standard, written and maintained by around 300
 member companies including Apple, Google and Amazon. It is what lets a device from one
@@ -46,8 +46,8 @@ and new members of the family cost almost nothing to add.
 
 Some of that design was argued out in public review threads, which has the useful property
 that the reasoning is still there to read; the rest happened in one-to-one conversations with
-Matter tech leads. I later presented the pattern to the wider membership at a Matter members
-meeting.
+Matter tech leads. I presented the pattern to the wider membership at the Matter members
+meeting in Boston in June 2023.
 
 ## The core SDK changes it needed
 
