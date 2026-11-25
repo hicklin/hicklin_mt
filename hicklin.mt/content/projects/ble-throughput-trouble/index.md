@@ -113,7 +113,7 @@ Our product did not use the feature. The upstream work outlived the decision, an
 asking the same question now starts from a working example rather than from weeks with a
 packet sniffer. That is the whole argument for contributing upstream rather than patching
 locally, and it is why I spent three years at the same company arguing for a process that
-made it possible to do so.
+made it possible to do so — [its own piece of work](@/projects/dyson-open-source/index.md).
 
 ## Other contributions in the same spirit
 
