@@ -107,4 +107,4 @@ before and I know which arguments work and which ones get you politely declined.
 
 - [github.com/dysonltd](https://github.com/dysonltd) — the public organisation, 18 repositories
 - [`commitment-issues`](https://github.com/dysonltd/commitment-issues), [`universal-robot`](https://github.com/dysonltd/universal-robot), [`paa5100je-pwm3901`](https://github.com/dysonltd/paa5100je-pwm3901) — the three libraries published in the company's own name
-- The internal business case, proposed workflow and presentations are confidential. I am happy to talk through the approach and what I would do differently.
+- The internal business case, proposed workflow and presentations are confidential

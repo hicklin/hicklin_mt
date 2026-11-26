@@ -206,4 +206,4 @@ MySQL, NMEA/GPS, Docker.
   — the mobile monitoring campaign in detail
 - The three libraries above
 - The logger source, its specification and the configuration protocol document are
-  confidential to the client. I am happy to walk through the design under NDA.
+  confidential to the client
