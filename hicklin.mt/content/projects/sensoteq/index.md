@@ -4,7 +4,7 @@ description = "Specified a whole system's communications before building it, des
 weight = 10
 
 [taxonomies]
-tags = ["Rust", "Go", "Embedded Linux", "Protocol design", "Specification authoring", "Nix"]
+tags = ["Rust", "Go", "Embedded Linux", "Protocol design", "Specification authoring", "Nix", "Technical leadership"]
 
 [extra]
 # Needs an image. Client material can't be used — a generic measurement-timing

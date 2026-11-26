@@ -4,7 +4,7 @@ description = "Took over an unreadable codebase, made it legible, then designed 
 weight = 19
 
 [taxonomies]
-tags = ["C++", "Python", "Embedded Linux", "Yocto", "Protocol design", "Technical leadership"]
+tags = ["C++", "Embedded Linux", "Yocto", "Protocol design", "Specification authoring", "Technical leadership", "OSS"]
 
 [extra]
 # Image: a pollution map from the public Breathe London pilot data, or a

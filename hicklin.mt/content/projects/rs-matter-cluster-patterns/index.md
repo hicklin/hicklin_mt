@@ -4,7 +4,7 @@ description = "Identified a gap in an independent Rust implementation of the Mat
 weight = 15
 
 [taxonomies]
-tags = ["Rust", "Standards", "API design", "Technical leadership", "OSS"]
+tags = ["Rust", "Standards", "API design", "Documentation", "Technical leadership", "OSS"]
 
 [extra]
 # Image: the opening slide of the Barcelona talk, or better, a photo of you

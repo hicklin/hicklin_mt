@@ -4,7 +4,7 @@ description = "Argued a prototyping team off Python and onto Go by first asking 
 weight = 45
 
 [taxonomies]
-tags = ["Go", "Protocol design", "Embedded Linux", "API design", "Technical leadership"]
+tags = ["Go", "Protocol design", "Embedded Linux", "API design", "Test automation", "Documentation", "Technical leadership"]
 
 [extra]
 # No image candidate. Everything here is confidential. A generic diagram of the

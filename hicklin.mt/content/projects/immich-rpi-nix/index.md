@@ -4,7 +4,7 @@ description = "Designed and documented a self-hosted photo server for people wit
 weight = 18
 
 [taxonomies]
-tags = ["Nix", "Security", "OSS"]
+tags = ["Nix", "Security", "Documentation", "OSS"]
 
 [extra]
 # Candidate image: the data-flow diagram or the public-access architecture diagram

@@ -4,7 +4,7 @@ description = "Took a question nobody could answer — how much data will Blueto
 weight = 50
 
 [taxonomies]
-tags = ["Rust", "Embedded", "OSS"]
+tags = ["Rust", "Embedded Rust", "Documentation", "OSS"]
 
 [extra]
 # Image: a Wireshark capture of a BLE connection, or a throughput plot against
