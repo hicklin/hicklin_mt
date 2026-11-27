@@ -8,7 +8,7 @@ template = "info-page.html"
 -->
 
 These are people I have worked with, quoted with their permission. Where a quote refers to
-something public, I have linked it, so you can go and look at the thing being described.
+work on this site, I have linked the case study, so you can read about the thing being described.
 
 > Whenever I have reviewed his PRs I am always impressed by the extensive and comprehensive
 > tests he writes to complement the code, as well as the clear and thorough documentation he

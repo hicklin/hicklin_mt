@@ -28,9 +28,9 @@ messages — a heart-rate reading, a button press, a sensor value every few seco
 continuous high-rate stream is the opposite. Nothing in the documentation tells you how much data it will carry, because
 the answer is not a number: it depends on a stack of configuration choices at different
 layers of the protocol, several of which interact, and some of which are negotiated between
-the two devices at connection time rather than chosen by you.
+the two devices at connection time, not chosen by you.
 
-So the honest answer to "can we do this?" was "nobody here knows, and the specification will
+So the real answer to "can we do this?" was "nobody here knows, and the specification will
 not tell us." The only way to get a trustworthy answer was to go and measure.
 
 ## Finding the ceiling
@@ -67,7 +67,7 @@ to six bytes of header in front of the payload. Any send at the stated maximum w
 Three lines changed, in two files, after a conversation with the maintainer in which we
 established which of the three size limits was the correct one to use.
 
-The second was a gap rather than a fault: the project had examples for several
+The second was a gap, not a fault: the project had examples for several
 configurations but not for the one that used a serial Bluetooth adapter, which is the setup
 most people reaching for high throughput on a desktop will have.
 
@@ -77,7 +77,7 @@ worked — including at much larger sizes. I wrote it up with the cases that wor
 cases that did not, traced the failure down to the specific call that returned a buffer-full
 error, and offered a hypothesis about a mismatch between two layers' maximum sizes. That
 report pulled in maintainers from the chip support project as well, and the discussion
-established it was a known limitation there rather than a bug in the Bluetooth host.
+established it was a known limitation there, not a bug in the Bluetooth host.
 
 ## A test that only looked like it passed
 
@@ -91,8 +91,7 @@ I reported it with the log that gives it away. The maintainer fixed it the same 
 I did not write that fix, and I am not claiming it. But a test suite that reports success
 without testing anything is worse than having no test, because it actively tells you not to
 look — and this had been running green in continuous integration for some time. It is the
-same failure mode I spend a lot of my time hunting: the difference between a test and the
-appearance of one.
+same failure mode I spend a lot of my time hunting.
 
 ## What I wanted to leave behind
 

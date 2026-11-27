@@ -8,15 +8,15 @@ connected devices. Before that I was a physicist, who ended up writing the data 
 the instruments I was meant to be operating, and never really went back.
 
 What I care about is correctness and maintainability, in a specific sense: that a system
-should be hard to use wrongly, that it should say so when something has failed rather than
-carrying on quietly, and that the reasoning behind it should exist somewhere other than in the
+should be hard to use wrongly, that it should say so when something has failed instead of
+carrying on as if nothing had happened, and that the reasoning behind it should exist somewhere other than in the
 code. [The work](@/projects/_index.md) is the argument for that rather than this paragraph.
 The ambition, such as it is, is unglamorous — to build things good enough that people adopt
 them without thinking about who wrote them.
 
 ## Where I am useful
 
-I am a generalist, and that is the point rather than a hedge. I have designed PCBs and
+I am a generalist, and that is the point, not a hedge. I have designed PCBs and
 soldered them, written firmware and the multi-threaded Linux applications sitting on top of
 it, specified protocols, argued designs through a standards body with engineers from
 competing companies, and spent three years getting a company's open-source policy approved.
@@ -29,7 +29,7 @@ between.
 - **Hardware and software together.** Compiling requirements for a board, reviewing someone
   else's design, then sitting at a bench with an oscilloscope when the firmware and the signal
   disagree about what is happening.
-- **Code you have inherited and cannot safely change.** I have done the unglamorous version
+- **Code you have inherited and cannot safely change.** I have done the slow version
   of this — weeks spent making a codebase legible before adding a single feature to it.
 - **Standards and cross-company work.** I have designed parts of a global standard alongside
   lead engineers from Google, Apple, iRobot and many others, and I know how that process actually runs.

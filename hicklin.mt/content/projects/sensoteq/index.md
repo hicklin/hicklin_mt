@@ -49,7 +49,7 @@ I designed the communications as three layers: each component's own messages and
 at the top, a framing layer common to the whole system beneath that, and the transport
 underneath. Two transports are in use — a message broker for publish/subscribe and
 request/response traffic, and a broker-less socket library for queued data streams — and
-which one a given interaction uses is fixed by rule rather than left to preference, so there
+which one a given interaction uses is fixed by rule, not left to preference, so there
 is one correct answer to how any two components should talk.
 
 ## A message that cannot lie about itself
@@ -73,7 +73,7 @@ and return an error rather than yielding a malformed message, so the constraints
 specification states are enforced where messages are created instead of being left to each
 caller to remember.
 
-Generating both libraries from one set of schemas keeps the two implementations honest about
+Generating both libraries from one set of schemas holds the two implementations to
 the same contract. CI then checks that the generated code is up to date with the schemas,
 runs the tests, and applies static analysis to both languages with exhaustive error handling
 and branch coverage enforced. A rule nobody checks automatically is a rule the codebase will
@@ -87,7 +87,7 @@ rates, along with the data processor downstream of it.
 
 The protocol for talking to those microcontrollers is a library crate that implements both
 ends of the conversation, so the same code can be used in Rust firmware on the
-microcontroller side rather than reimplemented against the same document. I also built an
+microcontroller side instead of being reimplemented against the same document. I also built an
 experimental firmware crate, running without an operating system, to exercise exactly that.
 
 This part of the work meant a lot of time with an oscilloscope — debugging across the signal

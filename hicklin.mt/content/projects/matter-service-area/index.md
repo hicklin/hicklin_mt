@@ -34,7 +34,7 @@ deadline.
 
 The specification document was owned and largely written by a colleague at iRobot. My
 involvement was in its design — the meetings where the cluster's behaviour was worked out —
-rather than in writing it. My own commits to the document are small and specific: renaming
+not in writing it. My own commits to the document are small and specific: renaming
 two fields, removing an error condition that could not arise, editorial corrections.
 
 Those changes came out of implementing the thing. Writing the code is what surfaced the
@@ -57,9 +57,9 @@ where buffer handling is where bugs live.
 
 The interesting work was therefore at the boundaries. I built a wrapper type for area data
 so its rules were enforced in one place instead of at every point of use, and a storage
-delegate so that the application decides how the data is kept rather than the cluster
+delegate so that the application decides how the data is kept instead of the cluster
 imposing it. Truncating over-long names correctly and consistently turned out to be a
-general problem rather than mine alone, so I added a safe truncating copy to the SDK's own
+general problem, not mine alone, so I added a safe truncating copy to the SDK's own
 string helpers and then pushed for its adoption across the codebase. I removed a use of
 `memcpy` while fixing the logic for skipping an area mid-operation. Several of the fixes
 listed below are cases where the cluster could report a state it was not actually in.
@@ -73,12 +73,8 @@ generates code from, the implementation, and the tests — without any of them d
 
 I contributed to the test plan, then got the cluster's certification tests working and
 running automatically in CI against the reference application — the same arrangement I had
-already set up for the robotic vacuum device type. That meant fixing the test scripts for
+already set up for [the robotic vacuum device type](@/projects/matter-rvc-device-type/index.md). That meant fixing the test scripts for
 six of the cluster's test cases so that they passed and could run unattended.
-
-This matters more than it sounds. Certification tests are how the standard's claims get
-enforced on real products. Before, the reference application's conformance was checked by
-someone running the tests by hand, at scheduled interoperability events. Afterwards it was checked on every commit.
 
 ## August
 
@@ -94,7 +90,7 @@ leaves nowhere to put a specification change made two days before.
 
 Having spent a release cycle inside that, I documented the workflow problems as they
 happened, then ran a retrospective with the other cluster developers to test whether what I
-had seen was general rather than particular to me. It was. I presented the findings and a
+had seen was shared. It was. I presented the findings and a
 set of recommendations to the standard's technical leads and executives.
 
 The recommendations were about sequencing rather than working harder: stagger the
