@@ -5,11 +5,6 @@ weight = 19
 
 [taxonomies]
 tags = ["C++", "Embedded Linux", "Yocto", "Protocol design", "Specification authoring", "Technical leadership", "OSS"]
-
-[extra]
-# Image: a pollution map from the public Breathe London pilot data, or a
-# photograph of an instrumented vehicle. The pilot data is published under the
-# Open Government Licence. Nothing from the codebase can be used.
 +++
 
 - **Role** — Systems Developer. I owned everything running on the device: instrument protocols, data collection, processing and validation. Hardware was designed by a third party against requirements I compiled and reviewed
@@ -44,6 +39,11 @@ to keep time.
 
 It also meant that if the logger stopped working, that shift's data was gone — and a shift
 was a car and a driver in London traffic for eight hours.
+
+{{ dimmable_image(src="air-monitors-car.jpg", alt="Reference-grade air quality instruments racked behind the front seats of a Google Street View car, with me in the passenger seat", full_width=true) }}
+
+*Reference-grade instruments racked behind the seats of one of the Street View cars. Around
+600 shifts were driven like this.*
 
 ## Arriving as the user rather than the author
 
@@ -83,6 +83,11 @@ Rather than a driver per instrument compiled in, instruments are described by te
 in a database and handled by a plugin structure, so that supporting a new instrument is
 configuration rather than a code change and a redeployment. The same applies to the
 individual measurements each instrument reports.
+
+{{ dimmable_image(src="air-monitors-desk.jpg", alt="A development bench covered in scientific instruments, cabling and test equipment, all wired to a data-logger", full_width=true) }}
+
+*The development bench, with several of the instruments the logger had to drive. Each one
+arrives with its own protocol, its own cabling and its own definition of a reading.*
 
 ## Two people changing the same thing, and one of them is offline
 

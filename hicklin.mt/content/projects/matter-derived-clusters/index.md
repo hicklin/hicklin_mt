@@ -5,10 +5,6 @@ weight = 20
 
 [taxonomies]
 tags = ["C++", "Standards", "API design", "Technical leadership", "OSS"]
-
-[extra]
-# Add the photo of the Boston talk (June 2023) here, then uncomment:
-# local_image = "projects/matter-derived-clusters/derived-cluster-pattern-talk.jpg"
 +++
 
 - **Role** — Senior Embedded Software Engineer at Dyson, contributing to the Matter SDK on behalf of a member company
@@ -48,6 +44,11 @@ Some of that design was argued out in public review threads, which has the usefu
 that the reasoning is still there to read; the rest happened in one-to-one conversations with
 Matter tech leads. I presented the pattern to the wider membership at the Matter members
 meeting in Boston in June 2023.
+
+{{ dimmable_image(src="matter-boston-talk.jpg", alt="Presenting to a room at the Matter members meeting, pointing at a projected slide comparing the old and new ways of accessing cluster attributes") }}
+
+*Presenting the pattern in Boston, June 2023. The slide is the before-and-after: the old way
+of reaching an attribute, and the interface that replaced it. Photo by Matt Hazley.*
 
 ## The core SDK changes it needed
 

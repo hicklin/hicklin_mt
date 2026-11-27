@@ -5,12 +5,6 @@ weight = 50
 
 [taxonomies]
 tags = ["Rust", "Embedded Rust", "Documentation", "OSS"]
-
-[extra]
-# Image: a Wireshark capture of a BLE connection, or a throughput plot against
-# connection interval. Your own capture, no permission question. A photo of the
-# bench — two dev boards and a sniffer — would also work and is more legible to
-# a non-technical reader.
 +++
 
 - **Role** — Lead Embedded Systems Engineer. Investigation for a product team, contributed upstream under my employer's open-source process
@@ -41,7 +35,7 @@ not tell us." The only way to get a trustworthy answer was to go and measure.
 
 ## Finding the ceiling
 
-I spent weeks at the packet level: two development boards, a Bluetooth sniffer, Wireshark,
+I spent weeks at the packet level: two development boards, an Ellisys Bluetooth analyser,
 and a long series of experiments changing one parameter at a time to see what each one
 actually cost. How often the two devices are allowed to talk, how much they may say in each
 exchange, how a large message gets chopped up for transmission and reassembled at the far
@@ -55,11 +49,18 @@ two of them up. These are the people who wrote the implementation. The naming in
 of the specification is a trap, and the trap is what the eventual documentation had to
 address.
 
-We got the throughput high enough to demonstrate a working, secure video stream to the
-product manager. The stream was not used in the end, for reasons that were not shared with
-us — but the security argument underneath it was accepted: as I recall, the route that was
-taken used Bluetooth to set up the Wi-Fi connection, precisely because of the properties
-that had made us reach for it in the first place.
+We got it to around 176 kB/s sustained — roughly 1.4 Mbit/s — which was enough to demonstrate
+a working, secure video stream to the product manager.
+
+{{ dimmable_image(src="max-ble-throughput.png", alt="A Bluetooth protocol analyser trace showing packets sent back to back across an 80 millisecond window at 176 kB/s") }}
+
+*Peak measured throughput on the analyser: 176 kB/s across an 80 ms window, with the packets
+back to back and almost no idle time left on the link.*
+
+The stream was not used in the end, for reasons that were not shared with us — but the
+security argument underneath it was accepted: as I recall, the route that was taken used
+Bluetooth to set up the Wi-Fi connection, precisely because of the properties that had made
+us reach for it in the first place.
 
 ## Fixing it where it was broken
 
@@ -130,7 +131,7 @@ Smaller, but the same instinct — fix it once, in the place where everyone gets
 
 ## Stack
 
-Rust, embedded Rust, Bluetooth Low Energy, Wireshark, Bluetooth sniffers, ESP32, HCI.
+Rust, embedded Rust, Bluetooth Low Energy, Ellisys Bluetooth analysers, Wireshark, ESP32, HCI.
 
 ## Evidence
 

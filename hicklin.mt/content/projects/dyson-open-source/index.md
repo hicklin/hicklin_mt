@@ -5,11 +5,6 @@ weight = 55
 
 [taxonomies]
 tags = ["Technical leadership", "OSS"]
-
-[extra]
-# No image candidate. The internal drafts and presentations are confidential, and
-# the only public artefact is a third party's GitHub organisation page, which is
-# both dull and theirs. Possibly leave this one without an image.
 +++
 
 - **Role** — Senior, then Lead Embedded Software Engineer. Self-initiated, alongside my engineering work

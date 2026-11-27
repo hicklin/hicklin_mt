@@ -5,10 +5,6 @@ weight = 18
 
 [taxonomies]
 tags = ["Nix", "Security", "Documentation", "OSS"]
-
-[extra]
-# Candidate image: the data-flow diagram or the public-access architecture diagram
-# from the book. Your own work, MIT-licensed public repo, no permission needed.
 +++
 
 - **Role** — Author and maintainer. My own project
@@ -36,6 +32,11 @@ world but has no door facing the open internet at all. Photos sit on an encrypte
 backups to cloud storage are automated.
 
 For most people that is the right answer, and it is what you get by doing nothing.
+
+{{ invertible_image(src="immich-data-flow-diagram.png", alt="Data flow in the default setup: a Raspberry Pi and an encrypted external drive on the home network, reachable from a home PC locally and from remote devices over a Tailscale overlay, with encrypted backups pushed out to cloud storage") }}
+
+*The default configuration. Every arrow crossing the home network boundary either starts
+inside it, or arrives over the private overlay. Nothing listens on the open internet.*
 
 But it isn't sufficient for everyone — share links don't work for people outside your private
 network, and some phones only allow one VPN at a time, so using a privacy VPN means losing
