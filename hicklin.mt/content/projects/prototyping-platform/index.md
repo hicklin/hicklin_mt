@@ -36,7 +36,7 @@ support.
 What came out was specific. Builds had to be fast and the output small, because these things
 are deployed to devices over a network many times a day. It had to cross-compile without
 ceremony. It needed to produce a single self-contained binary, because the deployment target
-was a container on a device rather than a machine someone had lovingly configured. Code had
+was a container on a device, not a machine someone had lovingly configured. Code had
 to be readable by whoever picked it up next, because people moved between projects
 constantly and inherited each other's work. And the learning curve had to be shallow: the
 team were strong engineers, working in Python and C and more besides, but a language they
@@ -51,7 +51,7 @@ something the team could look at rather than a case I was making. That demonstra
 moved it: the head of the team began encouraging people to switch shortly afterwards.
 
 Framing the choice as a requirements exercise rather than a preference is why it was
-winnable, and I think it is the only honest way to have that argument. I have watched
+winnable, and I think it is the only fair way to have that argument. I have watched
 language advocacy fail repeatedly, and it usually fails because someone led with the answer.
 
 ## Modules in three layers
@@ -90,7 +90,7 @@ It is a state synchronisation protocol over a message broker. Some modules own a
 state and are responsible for publishing it; others subscribe to state they care about and
 can request changes to it. Because it was designed to remain compatible with the messaging
 our shipping products already used, a prototype assembled from these blocks could talk to a
-real product rather than to a mock of one.
+real product instead of a mock of one.
 
 Three parts of it I think were worth having:
 
@@ -98,7 +98,7 @@ Three parts of it I think were worth having:
   as a valid value, including numeric ranges and permitted strings. So a module rejects a
   nonsensical value because of what it *is*, not because someone remembered to write a check.
 - **Changes can be batched** so that a set of related updates is published as one coherent
-  message rather than as a sequence of states the system was never really in.
+  message, not as a sequence of states the system was never really in.
 - **Every change carries the reason it happened**, and that provenance propagates
   automatically: when a module changes state because something asked it to, the reason travels
   with the resulting message. Debugging a dozen talking services without that is guesswork.
@@ -114,7 +114,7 @@ properly. It is the same thinking I later got to apply
 
 ## Testing the thing everyone depends on
 
-I led on testing and benchmarking the platform code, which is not glamorous and is the
+I led on testing and benchmarking the platform code, which nobody notices when it goes well and is the
 clearest case of leverage I can point to in that period. A bug in a prototype inconveniences
 one project. A bug in a shared module is a bug in everything built on it, and the person who
 eventually hits it has no idea the module is where to look. Benchmarks mattered for the same
@@ -136,7 +136,7 @@ Go, Python, Docker, Balena, embedded Linux, Yocto, MQTT, Altium.
 
 ## Evidence
 
-This work is confidential and there is nothing to link. What exists instead is the testimony
+This work is confidential and there is nothing to link. What exists instead is [the testimony](@/testimonials/index.md)
 of the people I did it with, some of which speaks directly to it — the adoption of Go, the
 module library, and the prototypes it shortened. I would rather show you that than ask you to
 take my word for it.

@@ -40,7 +40,7 @@ inside it, or arrives over the private overlay. Nothing listens on the open inte
 
 But it isn't sufficient for everyone — share links don't work for people outside your private
 network, and some phones only allow one VPN at a time, so using a privacy VPN means losing
-access to your own photos. Those are real needs, and the honest response is not to pretend
+access to your own photos. Those are real needs, and the right response is not to pretend
 the limitation away but to provide a deliberate, opt-in route that costs as little security
 as possible.
 
@@ -79,14 +79,14 @@ appearance of one.
 
 ## Threat model as a design axis
 
-People's circumstances differ, so the configuration is layered rather than monolithic: the
+People's circumstances differ, so the configuration is layered, not monolithic: the
 Nix modules let you opt into hardening, exposure, alternative backup providers and different
 installation routes, independently. Someone who only ever uses the server at home takes none
 of it. Someone sharing albums with family who refuse to install anything takes the exposure
 path and accepts what it costs.
 
 The point is that the decision is presented as a decision, with the trade-off stated, rather
-than being made silently on the reader's behalf.
+than being made for the reader without telling them.
 
 ## The book
 

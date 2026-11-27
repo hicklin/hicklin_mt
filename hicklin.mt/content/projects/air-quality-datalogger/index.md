@@ -160,7 +160,7 @@ came after the implementation. By the time of
 ## The platform under it, and the people on top of it
 
 The logger ran on a custom Linux built with Yocto, with the cross-compilation toolchain that
-goes with it, so the operating system was a defined artefact rather than whatever happened to
+goes with it, so the operating system was a defined artefact, not whatever happened to
 be installed.
 
 I also built an operations tool in Django, for the service team maintaining monitoring
@@ -187,7 +187,7 @@ believing.
 
 ## Contributions released
 
-Generic parts of the work went out rather than staying private, which is the same instinct
+Generic parts of the work were published, which is the same instinct
 that later turned into [policy work at Dyson](@/projects/dyson-open-source/index.md):
 
 - [`open62541Cpp`](https://github.com/bazza2jw/open62541Cpp) — C++ wrappers around the
