@@ -9,8 +9,7 @@ quick_navigation_buttons = true
 +++
 
 These are case studies, not posts. Each one is a piece of work: what the problem actually was,
-what I decided, and what it cost. There are no dates on them and they are not in chronological
-order — they are arranged roughly by how well they show what I do.
+what I decided, and what it cost. They are not in chronological order, they are arranged roughly by how well they show what I do.
 
 Some of this work is open source, so you do not have to take my word for any of it: the pull
 requests, the review threads and the arguments are linked. Some was done for clients and

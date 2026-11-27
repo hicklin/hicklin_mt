@@ -1,5 +1,5 @@
 +++
-title = "Pushing video through Bluetooth Low Energy"
+title = "How much will Bluetooth Low Energy carry?"
 description = "Took a question nobody could answer — how much data will Bluetooth Low Energy actually carry — down to the packet level, fixed what was wrong upstream, and left behind a worked example and the theory to use it."
 weight = 50
 
@@ -11,9 +11,9 @@ tags = ["Rust", "Embedded Rust", "Documentation", "OSS"]
 - **Period** — December 2024 to March 2025
 - **Outcome** — Feasibility proven to the product team; three pull requests merged upstream, including a high-throughput example and a written guide to the theory behind it; two defects reported, one of them in the project's own test suite
 
-My team was asked whether video could be streamed off a portable product. The device had
-both Wi-Fi and Bluetooth Low Energy, and we proposed Bluetooth — mainly on security
-grounds.
+My team was asked whether a product could stream a sustained, high-bandwidth feed of data to
+a phone. The device had both Wi-Fi and Bluetooth Low Energy, and we proposed Bluetooth —
+mainly on security and user experience grounds.
 
 Bluetooth Low Energy establishes its connections securely as part of the protocol itself:
 the two devices pair and agree encryption before any application data moves, and that
@@ -24,8 +24,8 @@ the device is advertising a network that anyone nearby can attempt to join. Bein
 range helps as well: an attacker has to be close enough to be noticed.
 
 That left an awkward question. Bluetooth Low Energy was designed for small, infrequent
-messages — a heart-rate reading, a button press, a sensor value every few seconds. Video is
-the opposite. Nothing in the documentation tells you how much data it will carry, because
+messages — a heart-rate reading, a button press, a sensor value every few seconds. A
+continuous high-rate stream is the opposite. Nothing in the documentation tells you how much data it will carry, because
 the answer is not a number: it depends on a stack of configuration choices at different
 layers of the protocol, several of which interact, and some of which are negotiated between
 the two devices at connection time rather than chosen by you.
@@ -42,25 +42,19 @@ exchange, how a large message gets chopped up for transmission and reassembled a
 end, and which radio mode is in use — each has a throughput consequence, and the consequences
 are not independent.
 
-That this is genuinely confusing rather than merely unfamiliar is on the public record. In
-one of my pull request threads the project's maintainer explained the three different
-size limits involved, then posted again shortly afterwards to correct himself, having mixed
-two of them up. These are the people who wrote the implementation. The naming in this part
-of the specification is a trap, and the trap is what the eventual documentation had to
-address.
+This is genuinely confusing rather than merely unfamiliar. There are three different size
+limits involved, with names close enough to swap without noticing, and working out which one
+applied where took a careful back-and-forth with the project's maintainer in one of my pull
+request threads. The naming in this part of the specification is a trap, and the trap is what
+the eventual documentation had to address.
 
 We got it to around 176 kB/s sustained — roughly 1.4 Mbit/s — which was enough to demonstrate
-a working, secure video stream to the product manager.
+a working, secure stream to the product manager at the rate the product needed.
 
 {{ dimmable_image(src="max-ble-throughput.png", alt="A Bluetooth protocol analyser trace showing packets sent back to back across an 80 millisecond window at 176 kB/s") }}
 
 *Peak measured throughput on the analyser: 176 kB/s across an 80 ms window, with the packets
 back to back and almost no idle time left on the link.*
-
-The stream was not used in the end, for reasons that were not shared with us — but the
-security argument underneath it was accepted: as I recall, the route that was taken used
-Bluetooth to set up the Wi-Fi connection, precisely because of the properties that had made
-us reach for it in the first place.
 
 ## Fixing it where it was broken
 
@@ -110,8 +104,8 @@ families, with a detailed guide covering the Bluetooth theory needed to choose t
 configuration for a given application — which parameters matter, what each one trades away,
 and how they interact.
 
-Our product did not use the feature. The upstream work outlived the decision, and anyone
-asking the same question now starts from a working example rather than from weeks with a
+Whatever the product went on to do, the upstream work does not depend on it: anyone asking
+the same question now starts from a working example rather than from weeks with a
 packet sniffer. That is the whole argument for contributing upstream rather than patching
 locally, and it is why I spent three years at the same company arguing for a process that
 made it possible to do so — [its own piece of work](@/projects/dyson-open-source/index.md).

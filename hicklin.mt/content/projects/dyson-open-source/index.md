@@ -9,7 +9,7 @@ tags = ["Technical leadership", "OSS"]
 
 - **Role** — Senior, then Lead Embedded Software Engineer. Self-initiated, alongside my engineering work
 - **Period** — 2022 to 2025
-- **Outcome** — A public organisation with 18 repositories: forks used for upstream contribution over two years, and three libraries published by the company in its own name
+- **Outcome** — A public organisation: forks used for upstream contribution, and libraries published by the company in its own name
 
 Dyson is a hardware company. Its products run on open-source software, as every modern
 product does. When I joined there was no procedure by which an engineer could contribute
@@ -70,18 +70,17 @@ alone — is what got it approved.
 The organisation is public, so the result is checkable rather than merely claimed. Its
 history shows the shape of the argument as much as the outcome:
 
-- **2023** — two repositories forked, both for the Matter work and nothing else. A route
-  negotiated for one programme, which is the situation the business case described.
-- **September to December 2024** — forks appear across six unrelated projects in four months:
-  the Bluetooth host, the host controller interface, the data structure library, a graphics
+- **2023** — forks for the Matter work and nothing else. A route negotiated for one
+  programme, which is the situation the business case described.
+- **Late 2024** — forks appear across a run of unrelated projects in a few months: the
+  Bluetooth host, the host controller interface, the data structure library, a graphics
   library, a linting tool. That burst is the general policy taking effect. The Bluetooth
   throughput work elsewhere on this site is among the first things to go through it.
 - **Early 2025** — three libraries published by the company in its own name: a driver for an
   optical flow sensor, a robot communication API, and a utility for compiling git metadata
   into a binary. Generic engineering, useful to anyone, disclosing nothing.
 
-Fifteen forks and three original projects. The eleven-month gap in the middle of that
-timeline is the honest part of the story: the work was slow, and the thing that moved it was
+The year-long gap in the middle of that timeline is the honest part of the story: the work was slow, and the thing that moved it was
 having a programme already running that nothing bad had happened to.
 
 ## Why I spent three years on it
@@ -100,6 +99,6 @@ before and I know which arguments work and which ones get you politely declined.
 
 ## Evidence
 
-- [github.com/dysonltd](https://github.com/dysonltd) — the public organisation, 18 repositories
+- [github.com/dysonltd](https://github.com/dysonltd) — the public organisation
 - [`commitment-issues`](https://github.com/dysonltd/commitment-issues), [`universal-robot`](https://github.com/dysonltd/universal-robot), [`paa5100je-pwm3901`](https://github.com/dysonltd/paa5100je-pwm3901) — the three libraries published in the company's own name
 - The internal business case, proposed workflow and presentations are confidential
