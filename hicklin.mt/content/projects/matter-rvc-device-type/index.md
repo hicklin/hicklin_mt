@@ -1,16 +1,10 @@
 +++
 title = "Matter: The robotic vacuum device type"
-description = "Owned a robot vacuum's definition in a global standard and the reference application the whole ecosystem tests against — and replaced conformance checking done by hand at scheduled events with tests that run on every commit."
+description = "Owned a robot vacuum's definition in a global standard and the reference application the whole ecosystem tests against — and got its certification tests running on every commit, where before they were run by hand at scheduled events."
 weight = 30
 
 [taxonomies]
 tags = ["C++", "Standards", "Test automation", "Technical leadership", "OSS"]
-
-[extra]
-# Candidate image: a state diagram of the robot vacuum's operational states, drawn
-# from the published specification. Public information, your own drawing. Check
-# which release to draw from.
-# local_image = "projects/matter-rvc-device-type/rvc-operational-states.svg"
 +++
 
 - **Role** — Senior Embedded Software Engineer at Dyson, contributing to the Matter SDK on behalf of a member company
@@ -75,9 +69,9 @@ surfaced as I wrote them rather than at a scheduled interoperability event.
 
 The part with the longest reach is the least visible: getting the robot vacuum's
 certification tests to run against the reference application in CI. Certification tests are
-how the standard's claims get enforced on real products. Before, conformance was checked by
-someone running the tests by hand, at scheduled events. Afterwards it was checked on every
-commit. I also fixed the parts of the shared Python test infrastructure that stood in the
+how the standard's claims get enforced on real products. Before, the reference application's
+conformance was checked by someone running the tests by hand, at scheduled events. Afterwards
+it was checked on every commit. I also fixed the parts of the shared Python test infrastructure that stood in the
 way, which other device types got for free.
 
 ## Evidence

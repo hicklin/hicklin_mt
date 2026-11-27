@@ -5,21 +5,6 @@ template = "info-page.html"
 
 <!--
   NOTHING ON THIS PAGE GOES LIVE WITHOUT THAT PERSON'S EXPLICIT PERMISSION.
-  Most of the source material is internal performance-review feedback, given in
-  confidence. Ask each person to approve the exact words you intend to publish,
-  and the attribution line you intend to put under them.
-
-  Format for each entry:
-
-  > The quote, trimmed. No internal project names, no product codenames.
-
-  <cite>Name — Role, Company</cite>
-
-  Optionally follow with one line of context, or a link to the work being
-  described, where the quote refers to something public.
-
-  TODO: add each person's role at the time to their <cite> line once they have
-  confirmed it — left off rather than guessed.
 -->
 
 These are people I have worked with, quoted with their permission. Where a quote refers to
@@ -90,6 +75,7 @@ credited: name, role at the time, and company. Tell me if you would rather not b
 will leave it off, or leave the whole thing out.
 
 If you would rather do it yourself, the site is a
-[public repository](https://github.com/hicklin/hicklin_mt) and a pull request adding a file to
-`content/testimonials/` is welcome. It is not the easier route and nobody should feel obliged
+[public repository](https://github.com/hicklin/hicklin_mt) and a pull request adding your words
+to [this page](https://github.com/hicklin/hicklin_mt/blob/main/hicklin.mt/content/testimonials/index.md)
+is welcome. It is not the easier route and nobody should feel obliged
 to take it.

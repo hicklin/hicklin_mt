@@ -17,7 +17,8 @@ What does not vary across any of it is how I want the result to behave. Interfac
 hard to misuse, failures that announce themselves instead of being absorbed, and the reasoning
 written down somewhere the next person will find it.
 
-Parts of the Matter smart-home standard and the open-source SDK behind it are mine. I spent
+I designed and built parts of the Matter smart-home standard and the open-source SDK behind
+it. I spent
 three years at Dyson getting the company to the point where its engineers could contribute to
 open source in public, and most recently designed an ultrasonic data-logger in Rust from a
 blank sheet.

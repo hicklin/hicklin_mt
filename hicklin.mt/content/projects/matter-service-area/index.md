@@ -5,11 +5,6 @@ weight = 40
 
 [taxonomies]
 tags = ["C++", "Standards", "Technical leadership", "Test automation", "OSS"]
-
-[extra]
-# Candidate image: the members meeting recognition slide — check with the CSA
-# whether it can be published before using it.
-# local_image = "projects/matter-service-area/members-meeting-recognition.jpg"
 +++
 
 - **Role** — Lead Embedded Engineer at Dyson, contributing to the Matter SDK on behalf of a member company
@@ -82,12 +77,12 @@ already set up for the robotic vacuum device type. That meant fixing the test sc
 six of the cluster's test cases so that they passed and could run unattended.
 
 This matters more than it sounds. Certification tests are how the standard's claims get
-enforced on real products. Before, conformance was checked by someone running the tests by
-hand, at scheduled interoperability events. Afterwards it was checked on every commit.
+enforced on real products. Before, the reference application's conformance was checked by
+someone running the tests by hand, at scheduled interoperability events. Afterwards it was checked on every commit.
 
 ## August
 
-Twenty-two of my pull requests merged in August 2024. That is what getting this cluster over
+More than twenty of my pull requests merged in August 2024. That is what getting this cluster over
 the deadline actually looked like.
 
 The cause was structural rather than personal. The implementation of the balloted

@@ -95,7 +95,7 @@ implementation. By then I had left my job, so I was no longer there on behalf of
 company and was not entitled to attend. The membership granted me an exemption on the
 strength of the contributions.
 
-{{ dimmable_image(src="rs-matter-talk-barcellona.jpg", alt="The opening slide of the talk projected at the Matter members meeting: the word rs-matter above the Rust logo, a row of hearts, and the Matter logo", full_width=true) }}
+{{ dimmable_image(src="rs-matter-talk-barcelona.jpg", alt="The opening slide of the talk projected at the Matter members meeting: the word rs-matter above the Rust logo, a row of hearts, and the Matter logo", full_width=true) }}
 
 *The opening slide in Barcelona, November 2025.*
 
