@@ -7,7 +7,7 @@ weight = 55
 tags = ["Technical leadership", "OSS"]
 +++
 
-- **Role** — Senior, then Lead Embedded Software Engineer. Self-initiated, alongside my engineering work
+- **Role** — Senior, then Lead Software Engineer. Self-initiated, alongside my engineering work
 - **Period** — 2022 to 2025
 - **Outcome** — A public organisation: forks used for upstream contribution, and libraries published by the company in its own name
 

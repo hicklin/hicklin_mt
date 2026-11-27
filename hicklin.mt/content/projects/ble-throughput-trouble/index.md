@@ -7,7 +7,7 @@ weight = 50
 tags = ["Rust", "Embedded Rust", "Documentation", "OSS"]
 +++
 
-- **Role** — Lead Embedded Systems Engineer. Investigation for a product team, contributed upstream under my employer's open-source process
+- **Role** — Lead Software Engineer. Investigation for a product team, contributed upstream under my employer's open-source process
 - **Period** — December 2024 to March 2025
 - **Outcome** — Feasibility proven to the product team; three pull requests merged upstream, including a high-throughput example and a written guide to the theory behind it; two defects reported, one of them in the project's own test suite
 
