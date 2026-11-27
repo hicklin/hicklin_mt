@@ -1,0 +1,57 @@
+name: Deploy site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+# Least privilege by default; the deploy job raises only what it needs.
+permissions:
+  contents: read
+
+# Never run two deployments at once, but let an in-progress one finish.
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (with tabi theme submodule)
+        uses: actions/checkout@v5
+        with:
+          submodules: true
+          persist-credentials: false
+
+      # Zola comes from the flake, so CI uses exactly the version pinned in
+      # flake.lock - the same one as the local dev shell.
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
+
+      - name: Build site
+        run: nix develop --command bash -c 'cd hicklin.mt && zola build'
+
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: hicklin.mt/public
+
+  deploy:
+    # Pull requests only get a build check; only main is published.
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
