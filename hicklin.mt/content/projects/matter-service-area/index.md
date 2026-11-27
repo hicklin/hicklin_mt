@@ -7,7 +7,7 @@ weight = 40
 tags = ["C++", "Standards", "Technical leadership", "Test automation", "OSS"]
 +++
 
-- **Role** — Lead Embedded Engineer at Dyson, contributing to the Matter SDK on behalf of a member company
+- **Role** — Lead Software Engineer at Dyson, contributing to the Matter SDK on behalf of a member company
 - **Period** — February to September 2024
 - **Outcome** — Shipped in Matter 1.4; 31 merged pull requests; recognised at a Matter members meeting
 
