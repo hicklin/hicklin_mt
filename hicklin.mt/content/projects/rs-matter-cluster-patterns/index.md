@@ -5,12 +5,6 @@ weight = 15
 
 [taxonomies]
 tags = ["Rust", "Standards", "API design", "Documentation", "Technical leadership", "OSS"]
-
-[extra]
-# Image: the opening slide of the Barcelona talk, or better, a photo of you
-# giving it. Your own slide, so no permission question — unlike a slide from
-# someone else's presentation. Alternative: one of the pattern diagrams — your own
-# PlantUML, in a public repository, so no permission needed.
 +++
 
 - **Role** — Open-source contributor, unpaid. In my own time at first, then full time
@@ -95,10 +89,15 @@ more or less on reflex.
 
 ## Barcelona
 
-I presented this work at the Matter members meeting in Barcelona in November 2025. By then
-I had left my job,
-so I was no longer there on behalf of a member company and was not entitled to attend. The
-membership granted me an exemption on the strength of the contributions.
+I presented this work with the project's lead developer at the Matter members meeting in
+Barcelona in November 2025, with a live demonstration: a lamp driven over Matter by the Rust
+implementation. By then I had left my job, so I was no longer there on behalf of a member
+company and was not entitled to attend. The membership granted me an exemption on the
+strength of the contributions.
+
+{{ dimmable_image(src="rs-matter-talk-barcellona.jpg", alt="The opening slide of the talk projected at the Matter members meeting: the word rs-matter above the Rust logo, a row of hearts, and the Matter logo", full_width=true) }}
+
+*The opening slide in Barcelona, November 2025.*
 
 I am still working on `rs-matter` — currently a refactor of its error-handling API.
 

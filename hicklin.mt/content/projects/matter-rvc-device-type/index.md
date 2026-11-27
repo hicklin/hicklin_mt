@@ -52,6 +52,13 @@ clusters behave *together*, most of the engineering is in the seams: a run mode 
 change in certain operational states, a clean mode that interacts with charging and docking,
 start-up behaviour whose meaning shifted during the cycle.
 
+{{ dimmable_image(src="rvc-app-state-diagram.png", alt="A composite state diagram of the robot vacuum reference application: operational states such as charging, docked, running, paused, seeking charger and error, each containing the run modes valid within it, with transitions driven by commands and by simulated real-world events", full_width=true) }}
+
+*The reference application's behaviour in one picture. Operational states in purple, the run
+modes that are valid inside each one nested in green, clean mode in orange, and in grey the
+out-of-band events — docked, charged, charger found, low charge — that stand in for a real
+robot the example does not have. The seams are the arrows.*
+
 Alongside it I built the reference application — the example implementation that the rest of
 the ecosystem develops and tests against. That makes its correctness a shared concern rather
 than mine alone: a bug in the reference application becomes a bug in everyone's understanding

@@ -5,10 +5,6 @@ weight = 10
 
 [taxonomies]
 tags = ["Rust", "Go", "Embedded Linux", "Protocol design", "Specification authoring", "Nix", "Technical leadership"]
-
-[extra]
-# Needs an image. Client material can't be used — a generic measurement-timing
-# diagram drawn from scratch would work.
 +++
 
 - **Role** — Embedded Systems Architect, nine-month fixed-term contract, remote

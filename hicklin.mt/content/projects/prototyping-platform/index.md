@@ -5,11 +5,6 @@ weight = 45
 
 [taxonomies]
 tags = ["Go", "Protocol design", "Embedded Linux", "API design", "Test automation", "Documentation", "Technical leadership"]
-
-[extra]
-# No image candidate. Everything here is confidential. A generic diagram of the
-# three-layer module structure, redrawn from scratch with no product specifics,
-# would work and would be the clearest thing on the page.
 +++
 
 - **Role** — Senior Embedded Software Engineer on the prototyping team. One of the main maintainers of the shared module library and the protocol the modules spoke
