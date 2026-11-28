@@ -1,9 +1,5 @@
 +++
 title = "Home"
-
-[extra]
-projects_path = "projects/_index.md"
-max_projects = 3
 +++
 
 # William Hicklin
@@ -18,15 +14,14 @@ hard to misuse, failures that announce themselves instead of being absorbed, and
 written down somewhere the next person will find it.
 
 I designed and built parts of the Matter smart-home standard and the open-source SDK behind
-it. I spent
-three years at Dyson getting the company to the point where its engineers could contribute to
-open source in public, and most recently designed an ultrasonic data-logger in Rust from a
-blank sheet.
+it. I spent three years at Dyson getting the company to the point where its engineers could
+contribute to open source in public, and most recently designed an ultrasonic data-logger in
+Rust from a blank sheet.
 
-A good deal of that work is public, so the case studies below link to the pull requests and
-the review threads rather than asking you to take my word for it. Where the work belongs to a
-client, the study describes the design and says plainly what it cannot show.
+A good deal of that work is public, so [the case studies](@/projects/_index.md) link to the
+pull requests and the review threads rather than asking you to take my word for it. Where the
+work belongs to a client, the study describes the design and says plainly what it cannot show.
 
 **Available now for contract work** — remote, or on site in Bristol.
 
-[About me](@/about/index.md) · [resume@hicklin.mt](mailto:resume@hicklin.mt)
+[See the work](@/projects/_index.md) · [About me](@/about/index.md) · [resume@hicklin.mt](mailto:resume@hicklin.mt)
