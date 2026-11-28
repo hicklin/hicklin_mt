@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout (with tabi theme submodule)
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
         with:
           submodules: true
           persist-credentials: false
@@ -29,14 +29,14 @@ jobs:
       # Zola comes from the flake, so CI uses exactly the version pinned in
       # flake.lock - the same one as the local dev shell.
       - name: Install Nix
-        uses: cachix/install-nix-action@v31
+        uses: cachix/install-nix-action@v32
 
       - name: Build site
         run: nix develop --command bash -c 'cd hicklin.mt && zola build'
 
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: hicklin.mt/public
 
@@ -54,4 +54,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
